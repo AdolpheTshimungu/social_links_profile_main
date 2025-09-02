@@ -2,8 +2,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 body {
-    background-color: hsl(0, 0%, 12%);
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,18 +19,83 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 12%);
     align-items: center;
+    justify-content: center;
     width: 21rem;
-    height: 35rem;
+    height: 36rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border-radius: 5%;
+    padding: 2rem 0rem 2rem 0rem;
 }
 
 .main img {
     width: 30%;
     border-radius: 50%;
+}
+
+.main h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: auto;
+    font-size: 1.7rem;
+}
+
+.main h2 {
+    color: hsl(75, 94%, 57%);
+    font-family: 'Inter', serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.main p {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.main ul {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.main ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 20%);
+    margin: auto;
+    padding: auto;
+    width: 80%;
+    font-family: 'Inter', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    height: 2.3rem;
+    border-radius: 8%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+ul li:hover {
+    background-color: bisque;
+    cursor: pointer;
 }
